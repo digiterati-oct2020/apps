@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+    <parent>
+    <groupId>com.scalablemind</groupId>
+    <artifactId>apps</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <groupId>com.scalablemind</groupId>
+  <artifactId>08_springjpa</artifactId>
+  <version>1.0.0</version>
+  <name>08_springjpa</name>
+  
+  <properties>
+		<java.version>1.8</java.version>
+		 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+		<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>	
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-tomcat</artifactId>
+</dependency>
+
+	</dependencies>
+	
+	<build>
+   <plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>    
+                <mainClass>com.digiterati.basics.configuration.driver.JavaConfigurationDriver</mainClass>
+            </configuration>
+			</plugin>
+ </plugins>
+   </build>
+</project>
