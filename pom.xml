@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.6.RELEASE</version>
+	</parent>
+  <groupId>com.scalablemind</groupId>
+  <artifactId>apps</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <name>apps</name>
+  <properties>
+		<java.version>1.8</java.version>
+		 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+
+	</dependencies>
+	
+	
+
+  <modules>
+  <module>01_springcore_javaconfig</module>
+       <module>02_springcore_annotationconfig</module>
+       <module>03_springcore_aop</module>
+       <module>04_springcore_test</module>
+       <module>05_springweb</module>
+       <module>06_springrest</module>
+       <module>07_springjdbc</module>
+       <module>08_springjpa</module>
+        <module>09_springdata</module>
+  </modules>
+</project>
