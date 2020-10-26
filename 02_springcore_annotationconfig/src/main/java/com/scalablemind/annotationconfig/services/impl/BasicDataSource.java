@@ -7,6 +7,10 @@ import com.scalablemind.annotationconfig.services.DataSource;
 @Component
 public class BasicDataSource implements DataSource {
 	
+	public BasicDataSource() {
+		System.out.println("creating DS...........");
+	}
+	
 	private String url;
 	
 	private String username;
