@@ -45,14 +45,6 @@
 	</dependencies>
 	
 	<build>
-   <plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>    
-                <mainClass>com.digiterati.basics.configuration.driver.JavaConfigurationDriver</mainClass>
-            </configuration>
-			</plugin>
- </plugins>
+
    </build>
 </project>
