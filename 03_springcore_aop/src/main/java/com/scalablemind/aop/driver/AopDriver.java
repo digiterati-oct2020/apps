@@ -16,6 +16,7 @@ public class AopDriver {
 		ApplicationContext c = SpringApplication.run(AopDriver.class,args);
 		
 		TestService service = c.getBean(TestService.class);
+		System.out.println("driver - before invoking display method");
 		service.display();
 	}
 

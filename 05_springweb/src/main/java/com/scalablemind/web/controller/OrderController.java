@@ -19,6 +19,7 @@ public class OrderController {
 			result = "error";
 		}
 		model.addAttribute("message", result);
+		model.addAttribute("test", "test1");
 		return "response";
 	}
 	
@@ -28,5 +29,4 @@ public class OrderController {
 		model.addAttribute("orderInfo", new OrderInfo());
 		return "login";
 	}
-
 }
