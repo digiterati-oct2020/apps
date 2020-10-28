@@ -2,6 +2,6 @@ package com.scalablemind.aop.service;
 
 public interface TestService {
 	
-	Integer display();
+	Integer display(Integer val);
 
 }

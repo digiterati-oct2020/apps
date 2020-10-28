@@ -12,6 +12,6 @@ public interface TestDataJpaRepository extends JpaRepository<TestJpaData,Integer
 	
 
 	@Transactional(readOnly = false)
-	TestJpaData findByTestId(Integer testId);
+	TestJpaData findByRemarks(String remarks);
 
 }

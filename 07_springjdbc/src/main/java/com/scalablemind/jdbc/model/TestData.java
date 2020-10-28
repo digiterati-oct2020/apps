@@ -2,7 +2,7 @@ package com.scalablemind.jdbc.model;
 
 public class TestData {
 	
-	private Integer testId;
+	private int testId;
 	
 	private String remarks;
 

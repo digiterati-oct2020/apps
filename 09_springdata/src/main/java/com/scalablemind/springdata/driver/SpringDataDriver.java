@@ -28,6 +28,9 @@ public class SpringDataDriver {
 		
 		System.out.println(repo.findAll());
 		System.out.println(repo.findById(1));
+		System.out.println("Fetched based on remarks=="+repo.findByRemarks("spring data"));
+		
+		repo.deleteAll();
 		
 		((ConfigurableApplicationContext)ctx).close();
 		

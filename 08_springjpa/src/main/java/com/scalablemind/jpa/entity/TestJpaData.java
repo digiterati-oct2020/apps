@@ -12,8 +12,8 @@ import javax.persistence.Table;
 public class TestJpaData {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="test_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer testId;
 	
 	@Column(name="remarks")

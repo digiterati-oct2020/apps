@@ -17,7 +17,7 @@ public class AopDriver {
 		
 		TestService service = c.getBean(TestService.class);
 		System.out.println("driver - before invoking display method");
-		service.display();
+		service.display(888);
 	}
 
 }

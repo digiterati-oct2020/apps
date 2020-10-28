@@ -11,13 +11,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class BeforeAspectService {
 	
-	@Before("execution(* display())")
+	@Before("execution(* display(*))")
 	public void beforeChange(JoinPoint jp) {
-		System.out.println("inside aspect - Before change...."+jp.getSignature());
+		Integer inputVal = (Integer)jp.getArgs()[0];
+		System.out.println("inside aspect - Before change...."+inputVal.toString());
 	}
 	
 	
-	@Around("execution(* display())")
+	@Around("execution(* display(*))")
 	public void aroundAdvice(ProceedingJoinPoint pjp) {
 		System.out.println("inside aspect - around advice...."+pjp.getSignature());
 		

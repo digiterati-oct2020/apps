@@ -21,9 +21,12 @@ public class RestClientDriver {
 		  HttpEntity<?> requestEntity = new HttpEntity<Object>("100001",headers);
 	  
 		  RestTemplate t = new RestTemplate();
-	  
+		  
 		  ResponseEntity<String> result =
-				  t.postForEntity("http://localhost:8882/services/Order", requestEntity,String.class); 
+				  t.postForEntity("http://localhost:8882/v1/services/Order", requestEntity,String.class); 
+		  
+		  
+		  
 		  System.out.print(result.getBody()); 
 	  }
 	 

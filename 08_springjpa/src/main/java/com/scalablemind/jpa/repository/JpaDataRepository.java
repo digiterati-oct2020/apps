@@ -23,7 +23,7 @@ public class JpaDataRepository {
 		entityManager.merge(data);
 	}
 	
-	@Transactional
+	@org.springframework.transaction.annotation.Transactional(readOnly = true)
 	public List<TestJpaData> getTestDataList() {
 		return entityManager.createQuery("select e from TestJpaData e").getResultList();
 	}

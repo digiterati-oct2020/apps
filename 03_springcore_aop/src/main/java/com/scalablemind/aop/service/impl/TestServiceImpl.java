@@ -8,7 +8,7 @@ import com.scalablemind.aop.service.TestService;
 public class TestServiceImpl implements TestService{
 	
 	
-	public Integer display() {
+	public Integer display(Integer val) {
 		System.out.println("Inside display method");
 		return 100;
 	}
